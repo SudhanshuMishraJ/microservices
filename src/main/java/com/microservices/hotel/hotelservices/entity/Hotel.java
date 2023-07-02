@@ -14,7 +14,6 @@ import lombok.*;
 @Entity
 @Table(name= "hotels")
 public class Hotel {
-
     @Id
     @Column(name = "ID", unique = true, nullable = false)
     private String hotelId;
