@@ -8,7 +8,20 @@ spring:
     password: toor
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  application:
+    name: HotelService
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true  #Default is true.
+    fetch-registry: true        #Default is true.
+    service-url:
+      defaultZone: http://localhost:8761/eureka
